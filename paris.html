@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <title>Paris</title>
+    <style>
+      .container {
+        background-image: linear-gradient(
+          to right,
+          #380fff,
+          #6e4cff,
+          #9478ff,
+          #b5a1ff,
+          #d4c9ff,
+          #e1cdfe,
+          #ecd1fc,
+          #f5d5fb,
+          #ffafe3,
+          #ff84b7,
+          #ff5679,
+          #ff2e2e
+        );
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        border-radius: 7px;
+        font-family: 'Titillium Web', sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        text-shadow: 2px 2px white;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 7px;
+      }
+      hr {
+        border: 1px solid white;
+      }
+      .first-paragraph {
+        font-weight: 600;
+      }
+      .read-all {
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: white;
+        color: black;
+        font-size: 18px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .footer {
+          text-align: center;
+          color: black;
+          font-size: 10px;
+      }
+      h6 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love you, Paris!</h1>
+      <h2>Paris is the capital of France and inspiration</h2>
+      <hr />
+      <img
+        src="https://www.euroseas.org/wp-content/uploads/2020/09/Paris.jpg"
+        alt="Paris"
+      />
+      <hr />
+      <p class="first-paragraph">
+        Paris is unarguably one of the most beautiful cities in the world, the
+        capital of France, of art and of fashion.
+      </p>
+      <p>
+        There are a thousand things to do and see in Paris and however much time
+        you have here, it won’t be enough:
+      </p>
+      <p>
+        Climb to the top of the Eiffel Tower, stroll down the Champs Elysées,
+        visit the Louvre, see many shows and exhibitions, or simply wander along
+        the banks of the Seine... read in French in the Tuileries garden, and
+        quite simply take the time to experience the Parisian way of life!
+      </p>
+      <p>
+        Stepping into this whirlwind that takes you from frenzy to romanticism
+        will leave you with enduring memories. You will be much more proficient
+        in French, and you will become aware of your ability to communicate in
+        the language of Molière.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Paris"
+        class="read-all"
+        target="_blank"
+      >
+        Read all about Paris on Wikipedia
+      </a>
+      <button>Buy tickets to Paris</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.instagram.com/_tor_nat_a_/" target="_blank">
+          Nataliia Torhonska
+        </a>
+      </p>
+      <h6>Hosted with <a href="https://www.netlify.com">Netlify</a></h6>
+    </div>
+    <script>
+        function buy() {
+          let name = prompt('What is your name?');
+          let email = prompt('What is your email address?');
+          let month = prompt('What month do you want to go to Paris?').toLowerCase(); 
+            if (month === 'april') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'may') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'june') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'july') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'august') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'september') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'october') {
+                alert('Cool, ' + name + '! Paris is beautiful in ' + month + '🌸');
+            }
+            if (month === 'november') {
+                alert('Well, ' + name + '! Paris is always beautiful, but ' + month + ' is usually quite cold😰 and rainy🌧');
+            }
+            if (month === 'december') {
+                alert('Well, ' + name + '! Paris is always beautiful, but ' + month + ' is usually quite cold😰 and rainy🌧');
+            }
+            if (month === 'january') {
+                alert('Well, ' + name + '! Paris is always beautiful, but ' + month + ' is usually quite cold😰 and rainy🌧');
+            }
+            if (month === 'february') {
+                alert('Well, ' + name + '! Paris is always beautiful, but ' + month + ' is usually quite cold😰 and rainy🌧');
+            }
+            if (month === 'march') {
+                alert('Well, ' + name + '! Paris is always beautiful, but ' + month + ' is usually quite cold😰 and rainy🌧');
+            }
+
+        }
+  
+        let buyButton = document.querySelector('button');
+        buyButton.addEventListener('click', buy);
+      </script>
+  </body>
+</html>
